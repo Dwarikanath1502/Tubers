@@ -47,13 +47,13 @@
         <button class="btn btn-accent"> Height: {{tuber.height}} </button>
       </div>
       <div class="person-description mt-2">
-        <button class="btn btn-accent"> Solo: {{tuber.crew}} </button>
+        <button class="btn btn-accent"> Crew: {{tuber.crew}} </button>
         <button class="btn btn-accent"> Canon: {{tuber.camera_type}} </button>
         <button class="btn btn-accent"> Subs: {{tuber.subs_count}} </button>
       </div>
 
     </section>
-
+  {% comment %} Reach Form {% endcomment %}
     <section class="youtuber-form container mt-5 mb-5">
       <div class="row">
         <form method="POST" action="{% url 'hiretuber' %}" class="col-md-8 offset-md-2">
