@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Contactteam
 from django.contrib import messages
 
@@ -20,4 +20,4 @@ def contactteam(request):
         contactteam = Contactteam(name=name, phone=phone,email=email, company_name=company_name,subject=subject, message=message, user_id=user_id)
         contactteam.save()
         messages.success(request, 'Thanks for reaching out!')
-        return redirect('home')
+        return redirect('contact')
