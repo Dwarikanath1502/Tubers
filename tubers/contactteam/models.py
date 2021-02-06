@@ -11,5 +11,5 @@ class Contactteam(models.Model):
     message = models.TextField(blank=True)
     user_id = models.IntegerField(blank=True)
     
-def __str__(self):
-    return self.email
+    def __str__(self):
+        return self.email
