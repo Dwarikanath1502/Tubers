@@ -1,1 +1,3 @@
-/images to upload
+# ignoring images folders
+images_to_upload/   
+projectImages/
